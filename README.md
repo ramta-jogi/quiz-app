@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+#QuizYouUp - quiz app
+A simple quiz app created with React.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Introduction
+QuizYouUp is a simple quiz app created using [React.js]{https://reactjs.org/}
 
-## Available Scripts
+The player can enter their name, select the number of questions, category of questions and the difficulty level of the questions.
+They can also choose to keep the quiz either timed, getting 30 seconds to answer any question; or not timed and take as much time for each question as they want.
 
-In the project directory, you can run:
+This repo contains the source code for the same. A production build is present in the production branch, which is hosted on [this link.]
 
-### `npm start`
+##Running the code
+To run the code, clone this repository in your system. Make sure you have Node.js installed. (Try running `node --version` on your terminal.)
+You can get Node.js [here]{https://nodejs.org/en/download/}
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open the repository in your terminal, then run `npm install` to install all the dependencies. 
+Then run `npm start`. The app will be hosted on your [localhost]{http://localhost:3000}
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+##Working
+The app is a three-page application linked using the React Router package. The quesitons are fethched by the free [TriviaAPI]{https://opentdb.com/}. 
+All the components are function components; and the app makes liberal use of the new Hooks feature of React (namely the useState and useEffect hooks).
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
