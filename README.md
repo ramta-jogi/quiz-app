@@ -17,6 +17,6 @@ Open the repository in your terminal, then run `npm install` to install all the 
 Then run `npm start`. The app will be hosted on your `localhost:3000`.
 
 ## Working
-The app is a three-page application linked using the React Router package. The quesitons are fethched by the free [TriviaAPI](https://opentdb.com/). 
+The app is a three-page application linked using the React Router package. The quesitons are fetched by the free [TriviaAPI](https://opentdb.com/). 
 All the components are function components; and the app makes liberal use of the new Hooks feature of React (namely the useState and useEffect hooks).
 
