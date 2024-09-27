@@ -1,13 +1,9 @@
 import React from 'react'
 import './Home.css'
-import MenuItem from '@material-ui/core/MenuItem'
-import Button from '@material-ui/core/Button'
-import TextField from '@material-ui/core/TextField'
-import Switch from '@material-ui/core/Switch'
-import FormControlLabel from '@material-ui/core/FormControlLabel';
+import { MenuItem, Button, TextField, Switch, FormControlLabel } from '@mui/material'
 import Categories from '../../components/Data/Categories'
 import { useState } from 'react'
-import { useHistory } from "react-router";
+import { useNavigate } from "react-router";
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage'
 
 const Home = ({ name, setName, fetchQuestions, fetchTimeBoolean}) => {
@@ -19,7 +15,7 @@ const Home = ({ name, setName, fetchQuestions, fetchTimeBoolean}) => {
     const quesArray = [3, 4, 5, 6, 7, 8, 9, 10]
     const [switchLabel, setSwitchLabel] = useState("Quiz is not timed")
 
-    const history = useHistory();
+    const navigate = useNavigate();
 
 
 
@@ -32,7 +28,7 @@ const Home = ({ name, setName, fetchQuestions, fetchTimeBoolean}) => {
             setError(false)
             fetchQuestions(noOfQues ,category, difficulty)
             fetchTimeBoolean(isTimed)
-            history.push("/quiz")
+            navigate("/quiz")
         }
     };
     return (
@@ -126,11 +122,9 @@ const Home = ({ name, setName, fetchQuestions, fetchTimeBoolean}) => {
                     >
                         Start Quiz
                     </Button>
-
-
                 </div>
             </div>
-            <img src='/quiz.png' className='banner' alt='Banner' />
+            <img src={`${process.env.PUBLIC_URL}/quiz.png`} className='banner' alt='Banner' />
         </div>
     )
 }

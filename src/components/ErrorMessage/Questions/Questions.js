@@ -2,8 +2,8 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import ErrorMessage from '../ErrorMessage';
 import './Questions.css'
-import Button from '@material-ui/core/Button';
-import { useHistory } from 'react-router';
+import { Button } from '@mui/material';
+import { useNavigate } from 'react-router';
 
 const Questions = ({
     currentQues,
@@ -19,7 +19,7 @@ const Questions = ({
     const [selected, setSelected] = useState();
     const [error, setError] = useState(false);
 
-    const history = useHistory()
+    const navigate = useNavigate()
 
     const handleSelect = (element) => {
         if (selected === element && selected === correct)
@@ -42,7 +42,7 @@ const Questions = ({
 
     const handleNext = () => {
         if(currentQues > questions.length-2) {
-            history.push("/result")
+            navigate("/result")
             setTime(30)
         }
         else if(selected){

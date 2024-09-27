@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import CircularProgress from '@material-ui/core/CircularProgress'
+import { CircularProgress } from '@mui/material'
 import './Quiz.css'
 import Questions from '../../components/ErrorMessage/Questions/Questions'
 
